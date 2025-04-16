@@ -67,7 +67,7 @@ const ProjectGrid: React.FC<ProjectGridProps> = ({ filter }) => {
     {
       id: '5',
       title: 'AI Image Generator',
-      image: 'https://images.unsplash.com/photo-1677442135136-760c813098e9?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+      image: 'https://images.unsplash.com/photo-1465101046530-73398c7f28ca?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
       description: 'AI-powered image generation tool',
       technologies: ['React', 'OpenAI', 'TensorFlow'],
       span: 'normal',
@@ -419,8 +419,9 @@ const ProjectGrid: React.FC<ProjectGridProps> = ({ filter }) => {
 </motion.div>
                   <button 
                     onClick={closeModal}
-                    className="absolute top-4 right-4 bg-black/50 hover:bg-black/80 p-2 rounded-full text-white"
-                    aria-label="Close modal"
+                    aria-label="Close"
+                    className="absolute top-2 right-2 z-50 bg-black/70 hover:bg-black/90 w-12 h-12 flex items-center justify-center rounded-full text-white shadow-lg focus:outline-none focus:ring-2 focus:ring-white/80 transition-all duration-200 md:top-4 md:right-4"
+                    style={{ touchAction: 'manipulation' }}
                   >
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                       <line x1="18" y1="6" x2="6" y2="18"></line>
