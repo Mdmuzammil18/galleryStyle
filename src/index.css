@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.masonry-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-auto-rows: 0;
+  gap: 2rem;
+}
+
+.masonry-item {
+  break-inside: avoid;
+  margin-bottom: 2rem;
+}
+
+.image-hover {
+  transition-property: all;
+  transition-duration: 500ms;
+}
+
+.image-hover:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.heart-grid-container {
+  transform-origin: center;
+  animation: floatAnimation 6s ease-in-out infinite;
+}
+
+@keyframes floatAnimation {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.glow-effect {
+  position: relative;
+}
+
+.glow-effect::before {
+  content: '';
+  position: absolute;
+  inset: -100px;
+  background: radial-gradient(
+    circle at center,
+    rgb(168 85 247 / 0.3),
+    rgb(59 130 246 / 0.2) 40%,
+    transparent 70%
+  );
+  filter: blur(40px);
+  z-index: -1;
+  transform: rotate(-45deg);
+}
+
+.glow-effect::after {
+  content: '';
+  position: absolute;
+  inset: -100px;
+  background: radial-gradient(
+    circle at center,
+    rgb(34 197 94 / 0.3),
+    rgb(59 130 246 / 0.2) 40%,
+    transparent 70%
+  );
+  filter: blur(40px);
+  z-index: -1;
+  transform: rotate(45deg);
+}
+
+@layer utilities {
+  .animation-delay-2000 {
+    animation-delay: 2s;
+  }
+  .animation-delay-4000 {
+    animation-delay: 4s;
+  }
+}
