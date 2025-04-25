@@ -2,6 +2,14 @@ import React, { useState, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Portfolio from './components/Portfolio/Portfolio';
 import ContactModal from './components/ContactModal';
+import LandingHero from './components/LandingHero';
+import Header from './components/Header';
+import HowWeHelp from './components/HowWeHelp';
+import WhyChooseUs from './components/WhyChooseUs';
+import IndustriesServed from './components/IndustriesServed';
+import CallToAction from './components/CallToAction';
+import ContactSection from './components/ContactSection';
+import Footer from './components/Footer';
 
 const App: React.FC = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -75,6 +83,13 @@ const App: React.FC = () => {
           </motion.div>
         )}
       </AnimatePresence>
+      <Header />
+      <LandingHero />
+      <HowWeHelp />
+      <WhyChooseUs />
+      <IndustriesServed />
+      <CallToAction />
+      <ContactSection />
       <Portfolio
         menuOpen={menuOpen}
         setMenuOpen={setMenuOpen}
@@ -82,6 +97,7 @@ const App: React.FC = () => {
         onContactClick={() => setContactModalOpen(true)}
       />
       <ContactModal isOpen={contactModalOpen} onClose={() => setContactModalOpen(false)} />
+      <Footer />
     </>
   );
 };
