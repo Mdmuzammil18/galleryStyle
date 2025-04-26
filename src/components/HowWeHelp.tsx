@@ -26,7 +26,12 @@ const cards = [
 ];
 
 const HowWeHelp: React.FC = () => (
-  <section id="services" className="relative z-20 py-12 md:py-16 from-black/90 via-blue-950/90 to-black/90">
+  <section id="services" className="relative z-20 py-12 md:py-16 bg-[#181C23] border-t border-blue-900/30 overflow-hidden">
+  {/* Ultra-faint noise overlay for premium depth */}
+  <div className="absolute inset-0 pointer-events-none opacity-5" style={{backgroundImage: "url('/noise.png')", backgroundRepeat: "repeat"}} />
+  {/* Abstract blurred blobs for modern effect */}
+  <div className="absolute -top-24 -left-32 w-96 h-96 bg-blue-800 rounded-full blur-3xl opacity-30 pointer-events-none" />
+  <div className="absolute -bottom-24 -right-32 w-96 h-96 bg-purple-800 rounded-full blur-3xl opacity-30 pointer-events-none" />
   {/* Top divider */}
   {/* <div className="absolute left-1/2 top-0 -translate-x-1/2 w-3/4 h-1 bg-gradient-to-r from-blue-400/20 via-purple-400/40 to-blue-400/20 rounded-full blur-sm opacity-80" /> */}
     <div className="max-w-6xl mx-auto px-4">

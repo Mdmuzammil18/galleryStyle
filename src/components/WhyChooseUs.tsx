@@ -21,7 +21,12 @@ const bullets = [
 ];
 
 const WhyChooseUs: React.FC = () => (
-  <section className="relative z-20 py-12 md:py-16 from-black/90 via-blue-950/90 to-black/90">
+  <section className="relative z-20 py-12 md:py-16 bg-[#181C23] border-t border-blue-900/30 overflow-hidden">
+  {/* Ultra-faint noise overlay for premium depth */}
+  <div className="absolute inset-0 pointer-events-none opacity-5" style={{backgroundImage: "url('/noise.png')", backgroundRepeat: "repeat"}} />
+  {/* Abstract blurred blobs for modern effect */}
+  <div className="absolute -top-24 -left-32 w-96 h-96 bg-blue-800 rounded-full blur-3xl opacity-30 pointer-events-none" />
+  <div className="absolute -bottom-24 -right-32 w-96 h-96 bg-purple-800 rounded-full blur-3xl opacity-30 pointer-events-none" />
     <div className="max-w-4xl mx-auto px-4">
       <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white text-center mb-8">
         Why Partner <span className="bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">With Us?</span>

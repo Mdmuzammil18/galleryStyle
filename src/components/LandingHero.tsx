@@ -63,7 +63,7 @@ const LandingHero: React.FC = () => {
 
   return (
     <>
-      <section className="relative flex flex-col items-center justify-center min-h-[70vh] px-4 pt-16 sm:pt-24 antialiased">
+      <section className="relative flex flex-col items-center justify-center min-h-[70vh] px-4 pt-16 sm:pt-24 antialiased pb-12 md:pb-20">
 
 
         {/* Background overlay for blending with your site's style */}
