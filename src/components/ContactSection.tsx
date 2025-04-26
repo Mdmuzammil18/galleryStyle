@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { FiCalendar } from "react-icons/fi";
 
 const ContactSection: React.FC = () => {
   const [form, setForm] = useState({ name: "", company: "", email: "", message: "" });

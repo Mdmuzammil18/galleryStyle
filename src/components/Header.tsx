@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { FiCalendar } from "react-icons/fi";
 import { FiMenu, FiX } from "react-icons/fi";
 
 const navLinks = [
