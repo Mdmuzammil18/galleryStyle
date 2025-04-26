@@ -5,7 +5,6 @@ import { useTypewriter } from "../hooks/useTypewriter";
 import CalBookingModal from "./CalBookingModal"; // New portal-based modal
 // IMPORTANT: Add <div id="modal-root"></div> to your public/index.html before </body>.
 import { FiCalendar, FiArrowRight } from "react-icons/fi";
-import AIToolsMarquee from "./AIToolsMarquee";
 import CodingTemplate from "./CodingTemplate";
 
 const testimonials = [
@@ -177,20 +176,9 @@ const LandingHero: React.FC = () => {
                 animation: float-slow 3.6s ease-in-out infinite;
               }
             `}</style>
-            {/* CodingTemplate only on mobile below hero text */}
-            <motion.div
-              className="w-full max-w-md block md:hidden mt-8 mx-auto"
-              initial={{ opacity: 0, y: 40 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, amount: 0.5 }}
-              transition={{ duration: 0.8, delay: 0.3 }}
-            >
-              <CodingTemplate />
-              {/* Testimonial carousel below code template (mobile) */}
-              <TestimonialCarousel />
-            </motion.div>
+
           </motion.div>
-          {/* Right: Coding Template (desktop only) */}
+          {/* Right: Coding Template and TestimonialCarousel (desktop only, one instance) */}
           <motion.div
             className="flex-1 w-full max-w-md hidden md:block"
             initial={{ opacity: 0, y: 40 }}
@@ -199,9 +187,8 @@ const LandingHero: React.FC = () => {
             transition={{ duration: 0.8, delay: 0.4 }}
           >
             <CodingTemplate />
-              {/* Testimonial carousel below code template (desktop) */}
-              <TestimonialCarousel />
-            </motion.div>
+            <TestimonialCarousel />
+          </motion.div>
         </div>
       </section>
     </>
