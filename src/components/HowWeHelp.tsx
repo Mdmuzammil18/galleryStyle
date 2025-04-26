@@ -63,7 +63,7 @@ const HowWeHelp: React.FC = () => (
       <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white text-center mb-12">
         Unlock the Power of <span className="bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">AI</span> for Your Workflow
       </h2>
-      <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+      <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
         {cards.map((card, i) => (
           <motion.div
             key={card.title}
@@ -71,7 +71,7 @@ const HowWeHelp: React.FC = () => (
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.2 }}
             transition={{ duration: 0.7, delay: i * 0.18 }}
-            className="flex-1 min-w-[220px] max-w-xs flex flex-col items-center md:items-center bg-black/30 backdrop-blur-lg rounded-3xl px-8 py-10 shadow-2xl border border-blue-400/10 hover:scale-[1.04] focus:scale-[1.04] hover:shadow-[0_0_32px_0_rgba(108,99,255,0.25)] focus:shadow-[0_0_32px_0_rgba(108,99,255,0.25)] transition-transform duration-300 outline-none group relative z-10 cursor-pointer"
+            className="w-full flex flex-col items-center bg-black/30 backdrop-blur-lg rounded-3xl px-4 py-6 sm:px-6 sm:py-8 shadow-2xl border border-blue-400/10 hover:scale-[1.04] focus:scale-[1.04] hover:shadow-[0_0_32px_0_rgba(108,99,255,0.25)] focus:shadow-[0_0_32px_0_rgba(108,99,255,0.25)] transition-transform duration-300 outline-none group relative z-10 cursor-pointer"
           >
             {card.icon}
             <h3 className="text-xl font-semibold text-white mb-2">{card.title}</h3>

@@ -91,22 +91,7 @@ const Header: React.FC = () => {
               <span className="absolute left-0 bottom-0 w-full h-0.5 bg-gradient-to-r from-blue-400 via-purple-400 to-blue-600 scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left rounded-full" />
             </a>
           ))}
-          <a
-            href="#contact"
-            className="ml-4 px-8 py-3 rounded-full bg-[linear-gradient(90deg,#6C63FF,#1FC2BE)] hover:scale-105 hover:shadow-lg transition-transform duration-300 text-white text-lg font-semibold shadow-lg focus-visible:ring-2 focus-visible:ring-blue-400 font-sans"
-            style={{ background: 'linear-gradient(90deg,#6C63FF,#1FC2BE)' }}
-            aria-label="Book a Consultation"
-            tabIndex={0}
-            onClick={e => {
-              e.preventDefault();
-              const el = document.getElementById('contact');
-              if (el) {
-                el.scrollIntoView({ behavior: 'smooth' });
-              }
-            }}
-          >
-            Book a Consultation
-          </a>
+
         </div>
         {/* Mobile Hamburger */}
         <button
@@ -146,23 +131,7 @@ const Header: React.FC = () => {
               <span className="absolute left-0 bottom-0 w-full h-0.5 bg-gradient-to-r from-blue-400 via-purple-400 to-blue-600 scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left rounded-full" />
             </a>
           ))}
-          <a
-            href="#contact"
-            className="mt-2 px-8 py-3 rounded-full bg-[linear-gradient(90deg,#6C63FF,#1FC2BE)] hover:scale-105 hover:shadow-lg transition-transform duration-300 text-white text-lg font-semibold shadow-lg focus-visible:ring-2 focus-visible:ring-blue-400 font-sans"
-            style={{ background: 'linear-gradient(90deg,#6C63FF,#1FC2BE)' }}
-            aria-label="Book a Consultation"
-            tabIndex={0}
-            onClick={e => {
-              e.preventDefault();
-              setMenuOpen(false);
-              const el = document.getElementById('contact');
-              if (el) {
-                el.scrollIntoView({ behavior: 'smooth' });
-              }
-            }}
-          >
-            Book a Consultation
-          </a>
+
         </div>
       )}
     </header>
