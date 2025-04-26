@@ -16,7 +16,7 @@ const ContactSection: React.FC = () => {
   };
 
   return (
-    <section id="contact" className="relative z-30 py-20 bg-gradient-to-b from-black/90 to-blue-950/90 flex items-center justify-center">
+    <section id="contact" className="relative z-20 py-12 md:py-16 overflow-hidden scroll-mt-32">
       <div className="max-w-xl w-full mx-auto px-4">
         <h2 className="text-3xl sm:text-4xl font-bold text-white text-center mb-8">Contact Us</h2>
         {submitted ? (

@@ -2,12 +2,7 @@ import React from "react";
 import { FiCalendar } from "react-icons/fi";
 
 const CallToAction: React.FC = () => (
-  <section className="relative z-30 py-12 md:py-16 bg-[#181C23] border-t border-blue-900/30 flex items-center justify-center overflow-hidden">
-  {/* Ultra-faint noise overlay for premium depth */}
-  <div className="absolute inset-0 pointer-events-none opacity-5" style={{backgroundImage: "url('/noise.png')", backgroundRepeat: "repeat"}} />
-  {/* Abstract blurred blobs for modern effect */}
-  <div className="absolute -top-24 -left-32 w-96 h-96 bg-blue-800 rounded-full blur-3xl opacity-30 pointer-events-none" />
-  <div className="absolute -bottom-24 -right-32 w-96 h-96 bg-purple-800 rounded-full blur-3xl opacity-30 pointer-events-none" />
+  <section className="relative z-30 py-12 md:py-16 flex items-center justify-center overflow-hidden">
     <div className="max-w-2xl mx-auto text-center px-4">
       <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
         Ready to see how <span className="bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">AI</span> can transform your business?
