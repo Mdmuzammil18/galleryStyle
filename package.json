@@ -12,6 +12,7 @@
     "@calcom/embed-react": "^1.5.2",
     "@tsparticles/react": "^3.0.0",
     "@tsparticles/slim": "^3.8.1",
+    "@vercel/analytics": "^1.5.0",
     "framer-motion": "^12.9.2",
     "gsap": "^3.12.7",
     "lightgallery": "^2.8.3",
