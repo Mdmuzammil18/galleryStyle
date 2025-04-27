@@ -51,7 +51,7 @@ const OurProcess: React.FC = () => (
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, delay: i * 0.15 }}
               viewport={{ once: true }}
-              className="w-full flex flex-col items-center bg-black/30 backdrop-blur-lg rounded-3xl px-4 py-6 md:px-8 md:py-10 shadow-2xl border border-blue-400/10 hover:scale-[1.04] focus:scale-[1.04] hover:shadow-[0_0_32px_0_rgba(108,99,255,0.25)] focus:shadow-[0_0_32px_0_rgba(108,99,255,0.25)] transition-transform duration-300 outline-none group relative z-10 cursor-pointer"
+              className="w-full md:flex-1 md:min-w-[220px] md:max-w-xs flex flex-col items-center bg-black/30 backdrop-blur-lg rounded-3xl px-4 py-6 md:px-8 md:py-10 shadow-2xl border border-blue-400/10 hover:scale-[1.04] focus:scale-[1.04] hover:shadow-[0_0_32px_0_rgba(108,99,255,0.25)] focus:shadow-[0_0_32px_0_rgba(108,99,255,0.25)] transition-transform duration-300 outline-none group relative z-10 cursor-pointer"
             >
               {/* Step number glowing dot */}
               <span className="absolute -top-7 left-1/2 -translate-x-1/2 md:static md:translate-x-0 flex items-center justify-center w-12 h-12 rounded-full bg-gradient-to-r from-blue-400 to-purple-500 shadow-xl border-2 border-blue-200/60 mb-3 animate-pulse">
