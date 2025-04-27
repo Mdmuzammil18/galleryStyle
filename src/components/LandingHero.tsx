@@ -116,7 +116,7 @@ const LandingHero: React.FC = () => {
               Trusted AI Automation Partner for Modern Teams.
 </span>
               {/* Glowing blurred accent behind headline */}
-              <div className="absolute -inset-x-8 -top-6 h-20 bg-gradient-to-r from-blue-500/30 via-blue-400/10 to-purple-500/30 rounded-full blur-2xl z-0 animate-pulse" />
+              <div className="absolute inset-x-0 -top-6 h-20 bg-gradient-to-r from-blue-500/30 via-blue-400/10 to-purple-500/30 rounded-full blur-2xl z-0 animate-pulse" />
               <h1 className="relative text-4xl sm:text-5xl md:text-6xl font-extrabold text-white drop-shadow-xl tracking-tighter subpixel-antialiased font-sans animate-fade-in z-10">
   Unlock 10x Productivity with <span className="bg-gradient-to-r from-blue-400 via-purple-400 to-blue-600 bg-clip-text text-transparent animate-gradient-x font-black">Tailored AI Integrations</span>
 </h1>
